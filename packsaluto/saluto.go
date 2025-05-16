@@ -15,5 +15,5 @@ func (s Saluto) Get_Messaggio() string {
 }
 
 func init() {
-	fmt.Println("Init() packsalutoS")
+	fmt.Println("Init() packsaluto")
 }
