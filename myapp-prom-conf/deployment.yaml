@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-app
+  name: go-app-prom
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: go-app
+      app: go-app-prom
   template:
     metadata:
       labels:
-        app: go-app
+        app: go-app-prom
     spec:
       containers:
-        - name: go-app
-          image: my-go-app
+        - name: go-app-prom
+          image: my-app-prom 
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
